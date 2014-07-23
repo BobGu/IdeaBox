@@ -39,5 +39,8 @@ class IdeaBoxApp < Sinatra::Base
     redirect '/'
   end
 
-
+  get '/:tag/same_tags' do |tag|
+    ideas = IdeaStore.find_all_by_tag(tag)
+    erb :index, locals: {ideas: ideas}
+  end
 end

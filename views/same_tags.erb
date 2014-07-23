@@ -1,0 +1,13 @@
+<p>
+  Showing ideas with the <%= ideas.first.tag %>
+</p>
+<ul>
+  <% ideas.each do |idea| %>
+    <li>
+      <%= idea.title %> (<%= idea.id %>)<br/>
+      <%= idea.description %><br/>
+      <%= idea.created_at %><br/>
+      tags: <%= idea.tag %><br/>
+    </li>
+  <% end %>
+<ul>

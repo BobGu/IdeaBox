@@ -5,11 +5,9 @@ class IdeaStore
 
 
   def self.all
-    ideas = []
-    raw_ideas.each_with_index do |data, i|
-      ideas << Idea.new(data.merge("id" => i))
+    raw_ideas.map.with_index do |data, i|
+      Idea.new(data.merge("id" => i))
     end
-    ideas
   end
 
   def self.raw_ideas
@@ -34,6 +32,10 @@ class IdeaStore
   def self.find(id)
     raw_idea = find_raw_ideas(id)
     Idea.new(raw_idea.merge("id" => id))
+  end
+
+  def self.find_all_by_tag(tag)
+    all.select { |i| i.tag == tag }
   end
 
   def self.update(id, data)
