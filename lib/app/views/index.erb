@@ -18,6 +18,7 @@
         <li>
           <%= idea.title %> (<%= idea.id %>)<br/>
           <%= idea.description %><br/>
+          <%= idea.created_at %><br/>
           tags: <%= idea.tag %><br/>
           <a href="/<%= idea.id %>/edit">Edit</a>
           <form action='/<%= idea.id %>/like' method='POST' style="display: inline">

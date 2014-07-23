@@ -1,16 +1,14 @@
 ---
 ideas:
-- title: Cake
-  description: I like cake, but not really..
-  rank: 3
-- title: Cake
-  description: I like cake?
-- title: cool
-  description: cool
-  rank: 1
-- title: Ramen
-  description: I like Ramen!
-  tag: japanese
-- title: Thai
-  description: Thai food is delicious!
-  tag: thai, spicy, pad thai
+- title: poker
+  description: I wont million
+  rank: 2
+  tag: income
+- title: lunch
+  description: Eat at illegal petes
+  rank: 2
+  tag: food
+- title: rest
+  description: sleep in my bed
+  tag: sleep
+  created_at: ''
