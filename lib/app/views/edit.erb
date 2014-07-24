@@ -1,9 +1,7 @@
     <form action="/<%= idea.id %>" method="POST">
-      <p>
-        Edit your Idea:
-      </p>
-      <input type="hidden" name="_method" value="PUT" />
-      <input type='text' name='idea[title]' value="<%= idea.title %>"/><br/>
-      <textarea name='idea[description]'><%= idea.description %></textarea><br/>
+      <h2>Edit your idea!!</h2>
+      <input type="hidden" placeholder='idea' name="_method" value="PUT" />
+      <input class='form-control' placeholder="<%= idea.title %>" type='text' name='idea[title]' /><br/>
+      <input class='form-control' placeholder='<%= idea.description %>'type='text' name='idea[description]'/>
       <input type='submit'/>
     </form>

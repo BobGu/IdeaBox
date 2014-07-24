@@ -1,7 +1,7 @@
 require 'idea_box'
 
 class Idea
-  attr_reader :title, :description, :rank, :id, :tag, :created_at
+  attr_reader :title, :description, :rank, :id, :tags, :created_at
   include Comparable
 
   def initialize(attributes)
@@ -9,7 +9,7 @@ class Idea
     @description = attributes["description"]
     @rank = attributes["rank"] || 0
     @id = attributes["id"]
-    @tag = attributes["tag"]
+    @tags = attributes["tags"] || []
     @created_at = Time.new.strftime('%A %l:%M %p')
   end
 
@@ -23,7 +23,7 @@ class Idea
       "title" => title,
       "description" => description,
       "rank" => rank,
-      "tag" => tag,
+      "tags" => tags,
       "created_at" => created_at
     }
   end

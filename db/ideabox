@@ -1,13 +1,17 @@
 ---
 ideas:
+- title: ''
+  description: ''
+  tags: []
 - title: lunch
-  description: Eat at illegal petes
-  rank: 2
-  tag: income
-- title: rest
-  description: sleep in my bed
-  tag: sleep
-  created_at: ''
-- title: '11'
-  description: '22'
-  tag: '33'
+  description: ramen
+  tags:
+  - noodles
+  - food
+  - yummy
+- title: Ice cream
+  description: ben and jerrys
+  tags:
+  - cream
+  - food
+  - yummy

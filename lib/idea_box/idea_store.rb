@@ -35,7 +35,7 @@ class IdeaStore
   end
 
   def self.find_all_by_tag(tag)
-    all.select { |i| i.tag == tag }
+    all.select { |idea| idea.tags.include?(tag)}
   end
 
   def self.update(id, data)
